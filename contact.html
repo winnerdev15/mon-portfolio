@@ -34,9 +34,31 @@
   </header>
 
   <section class="contact">
-    <h2>Restons en contact</h2>
-    <p>📧 Email : <a href="othniahet@gmail.com">othniahet@gmail.com</a></p>
-    <p>📞 WhatsApp : <a href="https://wa.me/229XXXXXXXXX" target="_blank">+229 01 98 65 64 61</a></p>
+    <h2>Envoyer un message</h2>
+
+    <form action="https://formsubmit.co/ton.email@gmail.com" method="POST">
+      <label for="name">Nom :</label><br>
+      <input type="text" name="name" id="name" required><br><br>
+
+      <label for="email">Email :</label><br>
+      <input type="email" name="email" id="email" required><br><br>
+
+      <label for="message">Message :</label><br>
+      <textarea name="message" id="message" rows="6" required></textarea><br><br>
+
+      <!-- Anti-spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirection après envoi -->
+      <input type="hidden" name="_next" value="https://winnerdev15.github.io/mon-portfolio/merci.html">
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <hr>
+
+    <h2>Mes coordonnées</h2>
+    <p>📧 Email : <a href="mailto:othniahet@gmail.com">othniahet@gmail.com</a></p>
+    <p>📞 WhatsApp : <a href="https://wa.me/2290198656461" target="_blank">+229 01 98 65 64 61</a></p>
     <p>💼 GitHub : <a href="https://github.com/winnerdev15" target="_blank">https://github.com/winnerdev15</a></p>
   </section>
 
