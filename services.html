@@ -3,30 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Services | Winner Dev</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    .services {
-  padding: 2em;
-  background: #fff;
-  margin: 2em;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-.services ul {
-  list-style: none;
-  padding-left: 0;
-}
-.services li {
-  background: #f0f0f0;
-  padding: 0.8em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-}
-.services a {
-  color: #0a9396;
-  text-decoration: none;
-  font-weight: bold;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
 
+    header {
+      background-color: #0a9396;
+      padding: 1em 2em;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #e0fbfc;
+    }
+
+    .services {
+      max-width: 800px;
+      margin: 2em auto;
+      background: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .services h2 {
+      text-align: center;
+      color: #0a9396;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      background: #e6f2f3;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-left: 5px solid #0a9396;
+      border-radius: 5px;
+    }
+
+    .services a {
+      color: #0a9396;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+      background: #0a9396;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .services {
+        margin: 1em;
+        padding: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -45,7 +116,6 @@
 
   <section class="services">
     <h2>Ce que je propose</h2>
-
     <ul>
       <li>💻 Développement d’applications en Python (GUI, scripts, automations)</li>
       <li>🌐 Création de sites web simples en HTML/CSS</li>
@@ -55,8 +125,7 @@
       <li>📦 Connexion et gestion de bases de données SQLite / PostgreSQL</li>
       <li>👨🏽‍💻 Développement de mini-outils personnalisés pour entreprises</li>
     </ul>
-
-    <p>Vous avez une idée ou un besoin spécifique ? <a href="contact.html">Contactez-moi !</a></p>
+    <p style="text-align: center;">Vous avez une idée ou un besoin spécifique ? <a href="contact.html">Contactez-moi !</a></p>
   </section>
 
   <footer>
